@@ -1,0 +1,25 @@
+/*
+Aurthor: Azhar Hussain
+for : azharhusain.com
+*/
+
+/*vendors */
+@import 'vendors/bootstrap/bootstrap.scss';
+/*variables*/
+@import 'helper/variables';
+
+@import 'themes/theme1';
+
+/*base*/
+
+@import 'base/typography';
+
+
+/*components*/
+@import 'components/buttons';
+
+/*layout*/
+
+@import 'layout/nav';
+
+/*pages or sections*/
