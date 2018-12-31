@@ -1,0 +1,53 @@
+/*what-people-say section*/
+$what-people-say-bg: #272c2f;
+$what-people-say-zindex: 1;
+
+.what-people-say .angle{
+    background-color: $what-i-do-bg;
+    &::before{
+        background-color: $what-people-say-bg;
+    }
+}
+
+.what-people-say{
+    background-color: $what-people-say-bg;
+    min-height: 50vh;
+}
+.what-people-say .card .row{
+    color: $white;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.quote{
+    margin-top: -25%;
+    background-color: $what-people-say-bg;
+    z-index: 2;
+}
+.quote blockquote{
+    padding: 0 4rem;
+    position: relative;
+}
+.quote blockquote::before{
+    content: '"';
+    position: absolute;
+    margin-left: -1.3rem;
+    top: -1.2rem;
+    font-size: 4rem;
+    color: $pink;
+}
+.quote h4{
+    color: $pink;
+    float: right;
+    position: relative;
+    margin-top: 1rem;
+}
+.quote h4::before{
+    content: '';
+    position: absolute;
+    right: 110%;
+    top: 45%;
+    width: 40px;
+    border-top: 2px solid;
+}

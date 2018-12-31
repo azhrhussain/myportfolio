@@ -1,0 +1,24 @@
+.mt-adj{
+    margin-top: 4rem;
+}
+.angle{
+    overflow: hidden;
+    width: 100%;
+    height: 170px;
+    position: relative;
+    background-color: $gray2;
+}
+.angle::before{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    left: -50%;
+    bottom: -50%;
+    background-color: $gray1;
+    transform: rotate(5deg);
+}
+
+.angle.flip::before{
+    transform: rotate(-5deg);
+}

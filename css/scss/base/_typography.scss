@@ -1,0 +1,45 @@
+body {
+    font-family: $font-family-poppins;
+}
+
+.heading-secondary {
+    font-family: $font-family-secondary-heading;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    text-transform: lowercase;
+}
+
+.line-horizontal::before {
+    position: absolute;
+    content: '';
+    height: 60px;
+    width: 1px;
+    background-color: $gray1;
+    bottom: 0;
+    left: -0.8rem;
+}
+
+/*primay heading*/
+.heading-primary {
+    font-family: $font-family-primary-heading;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+
+
+/*p-lead*/
+.p-lead {
+    font-size: 1.4rem;
+    color: $p-lead-color;
+}
+
+.p-small {
+    @extend .p-lead;
+    font-size: 1rem;
+}
+
+.heading-hire-me{
+    font-size: 1.5rem;
+}

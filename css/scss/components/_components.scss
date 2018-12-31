@@ -1,0 +1,11 @@
+/*doted circle*/
+.circle-doted{
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    border: 5px dotted $gray4;
+    bottom: -80%;
+    left: 7%;
+    z-index: 0;
+}

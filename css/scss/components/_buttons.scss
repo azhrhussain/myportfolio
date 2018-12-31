@@ -1,0 +1,33 @@
+.btn-checkout-profile{
+    background-color: transparent;
+    color: $orange;
+    border: none;
+    border-bottom: 2px solid $orange;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 0.25rem 0;
+    font-size: 1.2rem;
+}
+
+.btn-submit{
+    color: $white;
+    border: 2px solid $pink;
+    border-radius: 0;
+    width: 13rem;
+}
+
+.btn-rounded-hire-me{
+    height: 15rem;
+    width: 15rem;
+    background-color: $pink;
+    color: $white;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    position: relative;
+    font-family: $font-family-primary-heading;
+span{
+    position: absolute;
+    right: -2rem;
+    top: 30%;
+}
+}

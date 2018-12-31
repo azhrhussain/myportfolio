@@ -1,0 +1,65 @@
+/*what-i-do / innovation section*/
+$what-i-do-bg: #fff;
+$what-i-do-zindex: 1;
+$helping-container-bg: #bfd3d7;
+.what-i-do .angle{
+    background-color: $process-bg;
+    &::before{
+        background-color: $what-i-do-bg;
+    }
+}
+
+.what-i-do{
+    background-color: $what-i-do-bg;
+    padding-bottom: 7rem;
+}
+.what-i-do [class^=heading],.p-small{
+    color: $process-bg;
+}
+.helping-container{
+    position: relative;
+    z-index: 1;
+}
+
+
+.helping-container::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    max-width: 300px;
+    height: 150%;
+    min-height: 350px;
+    z-index: -1;
+    left: -8%;
+    top: -20%;
+    background-color: $helping-container-bg;
+}
+.helping-container .heading-title{
+    font-size: 1.9rem;
+    &::first-letter{
+        font-size: 2.3rem;
+    }
+}
+
+.helping-container .p-small{
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.app-sample-container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    align-items: flex-end;
+    margin-top: -12%;
+    justify-content: right;
+    padding-left: 2vw;
+}
+.app-sample-container div{
+    position: relative;
+    padding: 0 1rem;
+}
+.app-sample-container div:nth-child(3){
+    margin-right: -160px;
+}

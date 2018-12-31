@@ -1,0 +1,16 @@
+/*process section*/
+$process-bg: #443a8b;
+$process-zindex: 1;
+.process .angle{
+    background-color: $work-bg;
+    &::before{
+        background-color: $process-bg;
+    }
+}
+
+.process{
+    background-color: $process-bg;
+}
+.process [class^=heading]{
+    color: $white;
+}

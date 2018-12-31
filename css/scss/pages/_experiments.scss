@@ -1,0 +1,89 @@
+/*experiments section*/
+$experiments-bg: #fff;
+$experiments-zindex: 1;
+
+.experiments .angle{
+    background-color: $what-people-say-bg;
+    &::before{
+        background-color: $experiments-bg;
+    }
+}
+
+.experiments{
+    background-color: $experiments-bg;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+.experiments .circle-doted{
+    top: 0;
+    opacity: 0.15;
+    border-color: black;
+}
+
+.exp-heading-container,.exp-slide-container{
+    position: relative;
+    z-index: 1;
+}
+.exp-heading-container h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+.exp-heading-container::before{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: 70%;
+    width: 70%;
+    min-height: 150%;
+    background-color: $gray3;
+    z-index: -1;
+}
+
+
+.exp-slide-container{
+    background-color: $gray5;
+
+}
+.experiment-count{
+    position: absolute;
+    right: 0.5rem;
+    font-size: 3rem;
+    color: $pink;
+    font-weight: 100;
+}
+.experiment-count::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    width: 40px;
+    border-top: 2px solid;
+}
+
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 330px;
+}
+
+.heading-experiment{
+    text-transform: capitalize;
+    margin-top: 3rem;
+    color: $pink;
+    padding-left: 2rem;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 1.2rem;
+        border-top: 1px solid;
+        left: 1%;
+        top: 52%;
+    }
+}
+.heading-experiment + p{
+    padding-left: 2rem;
+}

@@ -1,0 +1,25 @@
+.card-bg-light::before{
+    content: '';
+    background-color: $card-bg-light;
+    position: absolute;
+    width: 30%;
+    height: 115%;
+    left: -20%;
+    top: 0;
+    z-index: $card-zindex;
+
+}
+.card-container{
+    z-index: $card-container-zindex;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.card{
+    border-radius: 0;
+    background-color: inherit;
+}
+.card-shadow{
+    box-shadow: 4px 2px 14.72px 1.28px rgba(0, 0, 0, 0.61),
+    -4px -2px 14.72px 1.28px rgba(0, 0, 0, 0.61);
+}

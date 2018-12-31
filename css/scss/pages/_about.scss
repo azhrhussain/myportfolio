@@ -1,0 +1,14 @@
+$about-bg: #f7f7f7;
+$about-zindex: 3;
+.about{
+    position: relative;
+    background-color: $about-bg;
+    z-index: $about-zindex;
+    padding-bottom: 6rem;
+}
+.about .angle{
+    background-color: #9abbc2;
+    &::before{
+        background-color: $about-bg;
+    }
+}

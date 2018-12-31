@@ -1,0 +1,38 @@
+/*bootstrap overrides*/
+
+
+
+$font-family-poppins: 'Poppins',sans-serif;
+$font-family-secondary-heading: $font-family-poppins;
+$font-family-primary-heading: 'PT Serif',serif;
+$primary: #000;
+$secondary: #000;
+$primary-light: #000;
+$secondary-light: #000;
+$text-color: #000000;
+
+$gray-dark: #282828;
+
+$orange: #da4621;
+
+$gray1: #818181 !default;
+$gray2: #aba8a8 !default;
+$gray3: #ececec !default;
+$gray4: #d9d9d9 !default;
+$gray5: #f7f7f7 !default;
+
+/*nav*/
+
+$nav-bg: rgba(255, 255, 255, 0);
+
+/*card*/
+$card-bg-light: $gray3 !default;
+$card-zindex:0;
+$card-container-zindex:1;
+
+/*paragraph*/
+$p-lead-color: $gray2 !default;
+
+/*buttons*/
+
+

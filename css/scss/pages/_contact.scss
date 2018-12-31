@@ -1,0 +1,51 @@
+/*contact section*/
+$contact-bg: #443a8b;
+$contact-zindex: 1;
+
+.contact .angle{
+    background-color: $experiments-bg;
+    &::before{
+        background-color: $contact-bg;
+    }
+}
+
+.contact{
+    background-color: $contact-bg;
+    position: relative;
+    padding-bottom: 6rem;
+    margin-bottom: 72px;
+}
+
+.contact [class^=heading]{
+    color: $white;
+}
+
+.contact-card{
+    padding: 2rem;
+}
+.form-control{
+    border-radius: 0;
+}
+label{
+    display: none;
+}
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.main-footer address{
+    background-color: $white;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-bottom: 0;
+}
+.main-footer .copyright{
+    background-color: $gray-dark;
+    color: rgba(255,255,255, 0.35);
+    text-align: center;
+    padding: 0.25rem 0;
+}
+

@@ -1,0 +1,154 @@
+.mac-container{
+    position: relative;
+}
+.mac-screen{
+    position: relative;
+    width: 100%;
+    padding: 0 7%;
+}
+.screen-outer{
+    display: block;
+    width: 95%;
+    height: 0;
+    padding-top: 0.4%;
+    padding-bottom: 52%;
+    margin: auto;
+    background: rgb(192,193,195);
+    box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+    border-radius: 2em;
+}
+.screen-inner {
+    display: block;
+    width: 98.7%;
+    height: 0;
+    padding-bottom: 66%;
+    margin: auto;
+    background-image: -webkit-linear-gradient(bottom, rgb(192,193,195), rgb(216,216,216));
+    border: #333 3px solid;
+    box-shadow: #fff 0px 0px 5px, inset rgba(0,0,0,0.3) 0px 0px 3px;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2% 4%;
+    border-bottom-right-radius: 2% 4%;
+    text-align: center;
+}
+.camera-outer {
+    display: block;
+    position: relative;
+    width: 1.5%;
+    height: 0;
+    padding-bottom: 1.5%;
+    margin: 3.5% auto 0 auto;
+    background: #333;
+    border-radius: 100%;
+    box-shadow: inset #000 0px 0px 5px, rgb(153,153,153) 0px 0px 3px, rgb(255,255,255) 0px 0px 7px;
+}
+.camera-inner {
+    width: 60%;
+    height: 0;
+    padding-top: 10%;
+    padding-bottom: 60%;
+    margin: auto;
+    background: rgba(0,0,153,0.4);
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+.screen-glass {
+    display: block;
+    width: 92%;
+    height: 0;
+    padding-bottom: 55%;
+    margin: 1% auto;
+    background-color: #333;
+}
+.screen-insert {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    background-image: url(wallpaper.jpg);
+    background-size: 100%;
+    box-shadow: inset rgba(0,0,0,1) 0px 1px 20px, #fff 0px 0px 90px;
+}
+.screen-glass-gloss {
+    display: block;
+    width: 100%;
+    padding-bottom: 60%;
+    background-image: -webkit-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 70%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+    background-image: -moz-linear-gradient(bottom left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 70%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);
+}
+.macbook-text {
+    min-width: 10%;
+    max-width: 100px;
+    font-size: 1.15em;
+    line-height: 250%;
+    margin: auto;
+    color: #333;
+    font-family: "Myriad Pro", Lucidia Grande;
+}
+.macbook-text strong {
+    font-weight: 600;
+}
+
+
+.base {
+    /* display: block;
+    max-width: 1200px;
+    margin: -1% auto; */
+    position: absolute;
+    margin: 0;
+    z-index: 57;
+    width: 90%;
+    left: 5%;
+    bottom: calc(-25% - -2px);
+}
+.base-top {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 0.7%;
+    background: #ccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px 70%;
+    border-bottom-right-radius: 10px 70%;
+    /* box-shadow: inset rgba(0,0,0,0.3) 0px 0px 5px; */
+    background: -webkit-linear-gradient(left, rgb(123,123,123) 0%, rgb(255,255,255) 3%, rgb(217,217,217) 7%, rgb(226,226,226) 20%, rgb(255,255,255) 50%, rgb(226,226,226) 80%, rgb(217,217,217) 90%, rgb(255,255,255) 97%, rgb(123,123,123) 100%);
+    background: -moz-linear-gradient(left, rgb(123,123,123) 0%, rgb(255,255,255) 3%, rgb(217,217,217) 7%, rgb(226,226,226) 20%, rgb(255,255,255) 50%, rgb(226,226,226) 80%, rgb(217,217,217) 90%, rgb(255,255,255) 97%, rgb(123,123,123) 100%);
+}
+
+.base-indent {
+    position: relative;
+    width: 20%;
+    height: 0;
+    padding-bottom: 0.73%;
+    margin: auto;
+    background-image: -webkit-linear-gradient(left, rgb(123,123,123) 0%, rgb(255,255,255) 9%, rgb(255,255,255) 50%, rgb(255,255,255) 92%, rgb(123,123,123) 100%);
+    background-image: -moz-linear-gradient(left, rgb(123,123,123) 0%, rgb(255,255,255) 9%, rgb(255,255,255) 50%, rgb(255,255,255) 92%, rgb(123,123,123) 100%);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    /* box-shadow: inset rgba(0,0,0,0.5) 0px 0px 7px; */
+    z-index: 9999;
+}
+
+.base-bottom {
+    width: 99.6%;
+    margin: auto;
+    height: 0;
+    padding-bottom: 2.2%;
+    background-image: -webkit-linear-gradient(bottom, rgb(59,60,64) 0%, rgb(103,104,108) 40%, rgb(183,183,183) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(59,60,64) 0%, rgb(103,104,108) 40%, rgb(183,183,183) 100%);
+    border-bottom-left-radius: 15% 100%;
+    border-bottom-right-radius: 15% 100%;
+}
+
+.base-shadow {
+    display: block;
+    width: 95%;
+    height: 0;
+    padding-bottom: 0.5%;
+    margin: -1% auto;
+    box-shadow: #000 0px 0px 100px;
+    position: relative;
+    z-index: -999;
+}
