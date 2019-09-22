@@ -6,6 +6,7 @@
     height: 115%;
     left: -20%;
     top: 0;
+    border-radius: $border-radius;
     z-index: $card-zindex;
 
 }
@@ -16,10 +17,10 @@
 }
 
 .card{
-    border-radius: 0;
+    border-radius: $border-radius;
     background-color: inherit;
+    border:none;
 }
 .card-shadow{
-    box-shadow: 4px 2px 14.72px 1.28px rgba(0, 0, 0, 0.61),
-    -4px -2px 14.72px 1.28px rgba(0, 0, 0, 0.61);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 }

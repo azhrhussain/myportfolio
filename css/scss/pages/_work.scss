@@ -1,7 +1,7 @@
 /*work section*/
 $work-bg: #fff;
 $work-zindex: 1;
-$servid-bg: rgba(234, 27, 34, 0.82);
+$servid-bg: rgba(219, 219, 219, 0.78);
 $dot-bg: url(../../images/dot-bg.png);
 $btn-hire-me-color:#fe6192;
 .work{
@@ -26,6 +26,11 @@ $btn-hire-me-color:#fe6192;
 .project-preview,.project-detail-container{
     position: relative;
 }
+.project-c{
+    background-color: rgba(219, 219, 219, 0.78);
+    border-radius: $border-radius;
+    padding: 1.5rem;
+}
 .project-preview::before{
     content: '';
     position: absolute;
@@ -37,27 +42,28 @@ $btn-hire-me-color:#fe6192;
     z-index: -1;
 }
 
-.project-detail-container::before{
-    content: '';
-    position: absolute;
-    width: 90%;
-    height: 155%;
-    min-height: 380px;
-    left: -20%;
-    top: -40%;
-    background-color: $servid-bg;
-    z-index: -1;
-}
+// .project-detail-container::before{
+//     content: '';
+//     position: absolute;
+//     width: 90%;
+//     height: 155%;
+//     min-height: 380px;
+//     left: -20%;
+//     top: -40%;
+//     background-color: $servid-bg;
+//     z-index: -1;
+// }
 
 .heading-project{
-    font-size: 4rem;
+    font-size: 2rem;
     text-transform: capitalize;
-    font-weight: 700;
+    font-family: $font-roboto;
+    font-weight: 600;
     line-height: 1;
 }
-.heading-project::first-letter{
-    font-size: 6rem;
-}
+// .heading-project::first-letter{
+//     font-size: 6rem;
+// }
 
 .project-summary h3{
     font-size: 1rem;

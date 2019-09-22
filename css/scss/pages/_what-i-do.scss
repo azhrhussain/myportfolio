@@ -14,7 +14,7 @@ $helping-container-bg: #bfd3d7;
     padding-bottom: 7rem;
 }
 .what-i-do [class^=heading],.p-small{
-    color: $process-bg;
+    color: inherit;
 }
 .helping-container{
     position: relative;
@@ -33,6 +33,7 @@ $helping-container-bg: #bfd3d7;
     left: -8%;
     top: -20%;
     background-color: $helping-container-bg;
+    border-radius: $border-radius;
 }
 .helping-container .heading-title{
     font-size: 1.9rem;

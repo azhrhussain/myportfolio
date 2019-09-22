@@ -4,7 +4,9 @@
 
 $font-family-poppins: 'Poppins',sans-serif;
 $font-family-secondary-heading: $font-family-poppins;
-$font-family-primary-heading: 'PT Serif',serif;
+$font-family-primary-heading:  'Lato', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-lato: 'Lato', sans-serif;
 $primary: #000;
 $secondary: #000;
 $primary-light: #000;
@@ -30,6 +32,7 @@ $card-bg-light: $gray3 !default;
 $card-zindex:0;
 $card-container-zindex:1;
 
+$border-radius:5px;
 /*paragraph*/
 $p-lead-color: $gray2 !default;
 

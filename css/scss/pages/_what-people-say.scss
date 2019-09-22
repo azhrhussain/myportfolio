@@ -1,5 +1,5 @@
 /*what-people-say section*/
-$what-people-say-bg: #272c2f;
+$what-people-say-bg: $gray3;
 $what-people-say-zindex: 1;
 
 .what-people-say .angle{
@@ -14,7 +14,7 @@ $what-people-say-zindex: 1;
     min-height: 50vh;
 }
 .what-people-say .card .row{
-    color: $white;
+    // color: $white;
     min-height: 300px;
     align-items: center;
     justify-content: center;
