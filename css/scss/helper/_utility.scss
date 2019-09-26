@@ -22,3 +22,9 @@
 .angle.flip::before{
     transform: rotate(-5deg);
 }
+.bg-blue{
+    background-color: $blue !important;
+}
+.bg-pink{
+    background-color: $pink;
+}

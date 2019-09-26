@@ -1,7 +1,8 @@
 /*contact section*/
-$contact-bg: #443a8b;
+// $contact-bg: #443a8b;
+$contact-bg: #f7f5f4;
 $contact-zindex: 1;
-
+$animation1: all 0.3s ease;
 .contact .angle{
     background-color: $experiments-bg;
     &::before{
@@ -13,24 +14,124 @@ $contact-zindex: 1;
     background-color: $contact-bg;
     position: relative;
     padding-bottom: 6rem;
-    margin-bottom: 72px;
+    padding-top: 6rem;
+    // margin-bottom: 72px;
+    overflow: hidden;
+    .container-fluid{
+        position: relative;
+        z-index: 6;
+    }
 }
-
-.contact [class^=heading]{
-    color: $white;
+.contact-heading-c{
+    position: relative;
 }
+.heading-form-light{
+    position: absolute;
+    z-index: 1;
+    color: rgba(129, 129, 129, 0.25);
+    font-size: 11rem;
+    line-height: 1;
+    top: -39%;
+    right: 12%;
+    font-weight: 700;
+}
+// .contact [class^=heading]{
+//     color: $white;
+// }
 
+.circle-left-5{
+    width: 70vw;
+    height: 110%;
+    display: flex;
+    position: absolute;
+    left: -30%;
+    top: -5%;
+    border-radius: 50%;
+}
+.circle-2{    
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    right: -10%;
+    bottom: -15%;
+
+}
 .contact-card{
     padding: 2rem;
+    background-color: #ffffff;
+    border-radius: $border-radius;
 }
+//form
+
+.form-group{
+    position: relative;
+    &::after{
+        content: '';
+        height: 1px;
+        background-color: $gray1;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}
+
 .form-control{
     border-radius: 0;
+    border: none;
+    &:focus{
+        box-shadow: none;
+        &+label{
+            font-size: 12px;
+            top:-13px;
+            transition: $animation1;
+        }
+    }
 }
 label{
-    display: none;
+    position: absolute;
+    top: 8px;
+    left: 0.25rem;
+    margin-bottom: 0;
+    transition: $animation1;
+}
+//form end
+
+//button send
+.btn-circle-dot{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    z-index: 1;
+    font-family: $font-lato;
+    letter-spacing: 1px;
+    color:$gray-dark;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: rgba(68, 58, 139, 0.4);
+        right: 0;
+        top: 8%;
+        z-index: -1;
+    }
+    &::before{
+        content: '..';
+        position: absolute;
+        left: -7px;
+        font-family: inherit;
+        line-height: 3px;
+        font-weight: 700;
+        font-size: 34px;
+        color:inherit;
+    }
 }
 .main-footer{
-    position: fixed;
+    // position: fixed;
     bottom: 0;
     z-index: -1;
     width: 100%;

@@ -9558,6 +9558,14 @@ a.text-dark:hover, a.text-dark:focus {
           transform: rotate(-5deg);
 }
 
+.bg-blue {
+  background-color: #443a8b !important;
+}
+
+.bg-pink {
+  background-color: #e83e8c;
+}
+
 /*base*/
 body {
   font-family: "Poppins", sans-serif;
@@ -9599,7 +9607,8 @@ body {
 }
 
 .heading-hire-me {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 /*components*/
@@ -10066,34 +10075,139 @@ body {
 }
 
 .contact .angle::before {
-  background-color: #443a8b;
+  background-color: #f7f5f4;
 }
 
 .contact {
-  background-color: #443a8b;
+  background-color: #f7f5f4;
   position: relative;
   padding-bottom: 6rem;
-  margin-bottom: 72px;
+  padding-top: 6rem;
+  overflow: hidden;
 }
 
-.contact [class^=heading] {
-  color: #fff;
+.contact .container-fluid {
+  position: relative;
+  z-index: 6;
+}
+
+.contact-heading-c {
+  position: relative;
+}
+
+.heading-form-light {
+  position: absolute;
+  z-index: 1;
+  color: rgba(129, 129, 129, 0.25);
+  font-size: 11rem;
+  line-height: 1;
+  top: -39%;
+  right: 12%;
+  font-weight: 700;
+}
+
+.circle-left-5 {
+  width: 70vw;
+  height: 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: -30%;
+  top: -5%;
+  border-radius: 50%;
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 50%;
+  right: -10%;
+  bottom: -15%;
 }
 
 .contact-card {
   padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group::after {
+  content: '';
+  height: 1px;
+  background-color: #818181;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 .form-control {
   border-radius: 0;
+  border: none;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-control:focus + label {
+  font-size: 12px;
+  top: -13px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 label {
-  display: none;
+  position: absolute;
+  top: 8px;
+  left: 0.25rem;
+  margin-bottom: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-circle-dot {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  z-index: 1;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  color: #282828;
+}
+
+.btn-circle-dot::after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(68, 58, 139, 0.4);
+  right: 0;
+  top: 8%;
+  z-index: -1;
+}
+
+.btn-circle-dot::before {
+  content: '..';
+  position: absolute;
+  left: -7px;
+  font-family: inherit;
+  line-height: 3px;
+  font-weight: 700;
+  font-size: 34px;
+  color: inherit;
 }
 
 .main-footer {
-  position: fixed;
   bottom: 0;
   z-index: -1;
   width: 100%;
